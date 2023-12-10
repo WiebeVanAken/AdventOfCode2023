@@ -1,11 +1,6 @@
-﻿var document = new string [] {
-    "1abc2",
-    "pqr3stu8vwx",
-    "a1b2c3d4e5f",
-    "treb7uchet"
-};
+﻿var lines = File.ReadAllLines("input.txt");
 
-var numbers = document
+var numbers = lines
     .Select(line => {
         var numbers = line
             .Select(c => c)
